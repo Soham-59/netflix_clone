@@ -1,5 +1,5 @@
 body{
-    background-color:#21081a;
+    background:linear-gradient(315deg,#000000,#0f0306)
 }
 
 /* scroll bar */
@@ -12,8 +12,7 @@ body{
     border: 2px solid white;
     box-shadow: inset;
     border-radius: 25px;
-    justify-content: center;
-    align-items: center;
+    
     justify-self: center;
 }
 #scroll_2{
@@ -72,6 +71,7 @@ a{
 }
 
 /* input email id */
+
 .input{
     justify-self: center;
 }
@@ -91,6 +91,247 @@ a{
     border: 1px solid red;
     text-align: center;
     font-size: 20px;
+
+}
+
+#trending{
+    margin-left: 100px;
+    font-size: 25px;
+    color: white;
+}
+.movies{
+    margin-left: 100px;
+}
+.movie_img{
+    margin-left: 60px;
+    width: 200px;
+    border: 2px solid black;
+     border-radius: 30px;
+}
+
+.series{
+    margin-left: 100px;
+}
+.series_img{
+    margin-left: 60px;
+    width: 200px;
+    border: 2px solid black;
+     border-radius: 30px;
+}
+
+
+/*  plans layouts and css */
+.Plans{
+    display: flex;
+    margin-left: 100px;
+}
+
+
+.plan-1,.plan-2{
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    background: linear-gradient(-50deg,#090d13,#0a336c);
+    margin-left: 70px;
+    border: 2px solid rgb(7, 17, 67);
+     border-radius: 30px;
+     color: white;
+
+}
+.plan-1:hover{
+    border: 2px solid whitesmoke;
+    background-blend-mode: darken;
+}
+.plan-3,.plan-4{
+    padding: 10px;
+    height: 300px;
+    width: 200px;
+    background: linear-gradient(-50deg,#1e032e,#ab4ed9);
+    margin-left: 70px;
+    border: 2px solid rgb(33, 11, 54);
+     border-radius: 30px;
+     color: white;
+
+}
+
+/* question and answer session */
+.reasons{
+/* border: 2px solid white; */
+/* display: flex; */
+display: inline-flex;
+
+
+}
+#reason1,#reason2,#reason3,#reason4{
+    margin-left: 100px;
+    width: 200px;
+    border: 2px solid rgb(35, 34, 34);
+    background-color: rgb(44 44 44);
+    padding-left: 20px;
+    padding-bottom: 100px;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+
+#questions{
+    margin-left: 100px;
+    font-size: 25px;
+    color: white; 
+}
+.quest{
+    width:1150px;
+    height: 30px;
+    background-color: rgb(57, 56, 56);
+    color: white;
+    padding: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+#last-btn{
+    color:white;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 650px;
+}
+#last-txt{
+    color: white;
+    margin-left: 635px;
+}
+/* footer */
+.section1{
+color: white;
+margin-left: 50px;
+/* margin-left: 150px;
+text-align: center; */
+}
+.section2{
+    margin-left: 50px;
+    color: white;
+    /* margin-left: 350px;
+    text-align: center; */
+}
+.section3{
+    margin-left: 50px;
+        color: white;
+        /* margin-left: 350px;
+        text-align: center; */
+        }
+.foot1{
+    width: 300px;
+    /* background-color: yellow; */
+    margin-left: 100px;
+}
+.foot2{
+    width: 300px;
+    /* background-color: yellow; */
+    margin-left: 100px;
+}
+.foot3{
+    width: 300px;
+    /* background-color: yellow; */
+    margin-left: 100px;
+}
+.main_foot{
+    display: inline-flex;
+    background-color: rgb(12, 12, 12);
+    margin-left: 100px;
+    height: 300px;
+}
+
+/* contact us setting */
+
+#contact{
+    color: white; 
+    margin-left: 100px;
+}
+
+/* media querry acces on mobiles tablets */
+@media (max-width:480px){
+    #scroll{
+      max-width: 400px;
+    }
+
+    #get-start{
+        margin-left: 100px;
+    }
+    .movies{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+
+    }
+    .series{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    .Plans{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        max-width: 400px;
     
+    }
+    .plan-1,.plan-2,.plan-3,.plan-4{
+        width: 380px;
+        margin-left: 20px;
+        height: 220px;
+        margin-top: 10px;
+    }
+    #trending{
+        margin-left: 5px;
+    }
+    #questions{
+        margin-left: 10px;
+    }
+    .reasons{
+        flex-direction: column;
+        width: 300px;
+    }
+    #reason1,#reason2,#reason3,#reason4{
+        margin-left: 0px;
+        width: 380px;
+        height:40px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .quest{
+        width: 380px;
+        margin-left: 10px;
+    }
+    #last-btn{
+        margin-left: 100px;
+    }
+    #last-txt{
+        margin-left: 70px;
+    }
+    #contact{
+        margin-left: 10px;
+    }
+    .main_foot{
+        flex-direction: column;
+        margin-left: 10px;
+        background-color:#000000;
+        height: 600px;
+    }
+    .section1,.section2,.section3{
+        margin-left: 0px;
+    }
+    .foot1,.foot2,.foot3{
+        margin-left: 0px;
+    }
+    #options{
+        margin-left: 50px;
+    }
+
+
 
 }
